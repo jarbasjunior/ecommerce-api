@@ -1,0 +1,5425 @@
+{
+	"info": {
+		"_postman_id": "fb461625-89d3-49e6-810c-5c6ff6aa5c8a",
+		"name": "ECommerce API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "products",
+			"item": [
+				{
+					"name": "images",
+					"item": [
+						{
+							"name": "Products Save Product Images",
+							"request": {
+								"auth": {
+									"type": "apikey",
+									"apikey": [
+										{
+											"key": "key",
+											"value": "Authorization",
+											"type": "string"
+										},
+										{
+											"key": "value",
+											"value": "<API Key>",
+											"type": "string"
+										},
+										{
+											"key": "in",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"images\": [\n        {\n            \"url\": \"<string>\"\n        },\n        {\n            \"url\": \"<string>\"\n        }\n    ]\n}",
+									"options": {
+										"raw": {}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/products/images/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"products",
+										"images",
+										":id"
+									],
+									"variable": [
+										{
+											"id": "d2fa7d06-e04d-4040-899e-5d0e4944608e",
+											"key": "id",
+											"value": "<guid>",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Untitled Example",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"description": "Added as a part of security scheme: apikey",
+												"key": "Authorization",
+												"value": "<API Key>"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"images\": [\n        {\n            \"url\": \"<string>\"\n        },\n        {\n            \"url\": \"<string>\"\n        }\n    ]\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/v1/products/images/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"products",
+												"images",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "Internal Server Error",
+									"code": 500,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"success\": false,\n \"errors\": [\n  {\n   \"key\": \"\",\n   \"value\": \"incididunt ullamco aute\"\n  },\n  {\n   \"key\": \"aut\",\n   \"value\": \"in adipisicing Lorem in dolor\"\n  }\n ]\n}"
+								},
+								{
+									"name": "Untitled Example",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"description": "Added as a part of security scheme: apikey",
+												"key": "Authorization",
+												"value": "<API Key>"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"images\": [\n        {\n            \"url\": \"<string>\"\n        },\n        {\n            \"url\": \"<string>\"\n        }\n    ]\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/v1/products/images/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"products",
+												"images",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"success\": true,\n \"errors\": [\n  {\n   \"key\": \"sed est tempor reprehenderit\",\n   \"value\": \"deserunt commodo\"\n  },\n  {\n   \"key\": \"nulla consectetur eu dolor\",\n   \"value\": \"quis dolore\"\n  }\n ],\n \"data\": {\n  \"links\": [\n   \"m\",\n   \"qui dolor\"\n  ]\n }\n}"
+								},
+								{
+									"name": "Untitled Example",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"description": "Added as a part of security scheme: apikey",
+												"key": "Authorization",
+												"value": "<API Key>"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"images\": [\n        {\n            \"url\": \"<string>\"\n        },\n        {\n            \"url\": \"<string>\"\n        }\n    ]\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/v1/products/images/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"products",
+												"images",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"success\": false,\n \"errors\": [\n  {\n   \"key\": \"\",\n   \"value\": \"incididunt ullamco aute\"\n  },\n  {\n   \"key\": \"aut\",\n   \"value\": \"in adipisicing Lorem in dolor\"\n  }\n ]\n}"
+								},
+								{
+									"name": "Untitled Example",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"description": "Added as a part of security scheme: apikey",
+												"key": "Authorization",
+												"value": "<API Key>"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"images\": [\n        {\n            \"url\": \"<string>\"\n        },\n        {\n            \"url\": \"<string>\"\n        }\n    ]\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/v1/products/images/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"products",
+												"images",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"success\": false,\n \"errors\": [\n  {\n   \"key\": \"\",\n   \"value\": \"incididunt ullamco aute\"\n  },\n  {\n   \"key\": \"aut\",\n   \"value\": \"in adipisicing Lorem in dolor\"\n  }\n ]\n}"
+								},
+								{
+									"name": "Untitled Example",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"description": "Added as a part of security scheme: apikey",
+												"key": "Authorization",
+												"value": "<API Key>"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"images\": [\n        {\n            \"url\": \"<string>\"\n        },\n        {\n            \"url\": \"<string>\"\n        }\n    ]\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/v1/products/images/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"products",
+												"images",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"success\": false,\n \"errors\": [\n  {\n   \"key\": \"\",\n   \"value\": \"incididunt ullamco aute\"\n  },\n  {\n   \"key\": \"aut\",\n   \"value\": \"in adipisicing Lorem in dolor\"\n  }\n ]\n}"
+								}
+							]
+						},
+						{
+							"name": "Products Delete Product Image",
+							"request": {
+								"auth": {
+									"type": "apikey",
+									"apikey": [
+										{
+											"key": "key",
+											"value": "Authorization",
+											"type": "string"
+										},
+										{
+											"key": "value",
+											"value": "<API Key>",
+											"type": "string"
+										},
+										{
+											"key": "in",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/products/images/:productImageId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"products",
+										"images",
+										":productImageId"
+									],
+									"variable": [
+										{
+											"id": "d6a10270-a426-4ee2-a86f-9813070d1c78",
+											"key": "productImageId",
+											"value": "<guid>",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Untitled Example",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [
+											{
+												"description": "Added as a part of security scheme: apikey",
+												"key": "Authorization",
+												"value": "<API Key>"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/v1/products/images/:productImageId",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"products",
+												"images",
+												":productImageId"
+											],
+											"variable": [
+												{
+													"key": "productImageId"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": "in pariatur ut proident consectetur"
+								}
+							]
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Create Product",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "b4ee6f81-e893-447d-af34-a7530ee1a1d2",
+								"exec": [
+									"pm.environment.set('productId', pm.response.json().data.productId);",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "a3bba031-8a87-4fac-b448-74555757d4e1",
+								"exec": [
+									"// cria o token do admin",
+									"const adminToken = { ",
+									"    url: pm.environment.get('baseUrl') + '/' + pm.environment.get('version') + '/auth',",
+									"    method: 'POST',",
+									"    header: { 'Content-Type': 'application/json-patch+json' },",
+									"    body: {",
+									"        mode: 'raw',",
+									"        raw: JSON.stringify({ ",
+									"                email: pm.environment.get('adminUser'),",
+									"                senha: pm.environment.get('password')",
+									"            })",
+									"    }",
+									"}",
+									"",
+									"pm.sendRequest(adminToken, (error, response) => {",
+									"    console.log(response.json())",
+									"    pm.environment.set('tokenAdmin', 'Bearer ' + response.json().data.token);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json-patch+json"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{tokenAdmin}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"{{$randomFirstName}} {{$randomLastName}}\",\n    \"quantity\": {{$randomInt}},\n    \"keyWords\": [\n        \"01895bfb-0766-4e87-ac21-72af635715c0\"\n    ],\n    \"price\": {{$randomPrice}},\n    \"description\": \"Descrição do produto\"\n}",
+							"options": {
+								"raw": {}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/{{version}}/products",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"{{version}}",
+								"products"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"<string>\",\n    \"quantity\": \"<integer>\",\n    \"keyWords\": [\n        \"<guid>\",\n        \"<guid>\"\n    ],\n    \"price\": \"<decimal>\",\n    \"description\": \"<string>\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/products",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"products"
+									]
+								}
+							},
+							"status": "Unprocessable Entity (WebDAV) (RFC 4918)",
+							"code": 422,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"success\": false,\n \"errors\": [\n  {\n   \"key\": \"\",\n   \"value\": \"incididunt ullamco aute\"\n  },\n  {\n   \"key\": \"aut\",\n   \"value\": \"in adipisicing Lorem in dolor\"\n  }\n ]\n}"
+						},
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"<string>\",\n    \"quantity\": \"<integer>\",\n    \"keyWords\": [\n        \"<guid>\",\n        \"<guid>\"\n    ],\n    \"price\": \"<decimal>\",\n    \"description\": \"<string>\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/products",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"products"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"success\": false,\n \"errors\": [\n  {\n   \"key\": \"\",\n   \"value\": \"incididunt ullamco aute\"\n  },\n  {\n   \"key\": \"aut\",\n   \"value\": \"in adipisicing Lorem in dolor\"\n  }\n ]\n}"
+						},
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"<string>\",\n    \"quantity\": \"<integer>\",\n    \"keyWords\": [\n        \"<guid>\",\n        \"<guid>\"\n    ],\n    \"price\": \"<decimal>\",\n    \"description\": \"<string>\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/products",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"products"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"success\": false,\n \"errors\": [\n  {\n   \"key\": \"\",\n   \"value\": \"incididunt ullamco aute\"\n  },\n  {\n   \"key\": \"aut\",\n   \"value\": \"in adipisicing Lorem in dolor\"\n  }\n ]\n}"
+						},
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"<string>\",\n    \"quantity\": \"<integer>\",\n    \"keyWords\": [\n        \"<guid>\",\n        \"<guid>\"\n    ],\n    \"price\": \"<decimal>\",\n    \"description\": \"<string>\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/products",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"products"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"success\": false,\n \"errors\": [\n  {\n   \"key\": \"\",\n   \"value\": \"incididunt ullamco aute\"\n  },\n  {\n   \"key\": \"aut\",\n   \"value\": \"in adipisicing Lorem in dolor\"\n  }\n ]\n}"
+						},
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"<string>\",\n    \"quantity\": \"<integer>\",\n    \"keyWords\": [\n        \"<guid>\",\n        \"<guid>\"\n    ],\n    \"price\": \"<decimal>\",\n    \"description\": \"<string>\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/products",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"products"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"success\": false,\n \"errors\": [\n  {\n   \"key\": \"in consequat dolore aute magna\",\n   \"value\": \"eu culpa\"\n  },\n  {\n   \"key\": \"irure incididunt\",\n   \"value\": \"sit Excepteur adipisicing Duis cillum\"\n  }\n ],\n \"data\": {\n  \"productId\": \"irure occaecat qui magna\"\n }\n}"
+						},
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"<string>\",\n    \"quantity\": \"<integer>\",\n    \"keyWords\": [\n        \"<guid>\",\n        \"<guid>\"\n    ],\n    \"price\": \"<decimal>\",\n    \"description\": \"<string>\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/products",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"products"
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"success\": false,\n \"errors\": [\n  {\n   \"key\": \"\",\n   \"value\": \"incididunt ullamco aute\"\n  },\n  {\n   \"key\": \"aut\",\n   \"value\": \"in adipisicing Lorem in dolor\"\n  }\n ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Get Products",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/{{version}}/products",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"{{version}}",
+								"products"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Lightweight Steel Gloves",
+									"disabled": true
+								},
+								{
+									"key": "KeyWordId",
+									"value": "6ac1c9a4-6f8b-414d-86ff-3fa2fbc32679",
+									"disabled": true
+								},
+								{
+									"key": "IsActive",
+									"value": "<boolean>",
+									"disabled": true
+								},
+								{
+									"key": "MinValue",
+									"value": "<decimal>",
+									"disabled": true
+								},
+								{
+									"key": "MaxValue",
+									"value": "<decimal>",
+									"disabled": true
+								},
+								{
+									"key": "PageIndex",
+									"value": "<integer>",
+									"disabled": true
+								},
+								{
+									"key": "PageSize",
+									"value": "<integer>",
+									"disabled": true
+								},
+								{
+									"key": "SortField",
+									"value": "<string>",
+									"disabled": true
+								},
+								{
+									"key": "SortType",
+									"value": "<string>",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/products?Name=<string>&KeyWordId=<guid>&IsActive=<boolean>&MinValue=<decimal>&MaxValue=<decimal>&PageIndex=<integer>&PageSize=<integer>&SortField=<string>&SortType=<string>",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"products"
+									],
+									"query": [
+										{
+											"key": "Name",
+											"value": "<string>"
+										},
+										{
+											"key": "KeyWordId",
+											"value": "<guid>"
+										},
+										{
+											"key": "IsActive",
+											"value": "<boolean>"
+										},
+										{
+											"key": "MinValue",
+											"value": "<decimal>"
+										},
+										{
+											"key": "MaxValue",
+											"value": "<decimal>"
+										},
+										{
+											"key": "PageIndex",
+											"value": "<integer>"
+										},
+										{
+											"key": "PageSize",
+											"value": "<integer>"
+										},
+										{
+											"key": "SortField",
+											"value": "<string>"
+										},
+										{
+											"key": "SortType",
+											"value": "<string>"
+										}
+									]
+								}
+							},
+							"status": "Unprocessable Entity (WebDAV) (RFC 4918)",
+							"code": 422,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"success\": false,\n \"errors\": [\n  {\n   \"key\": \"\",\n   \"value\": \"incididunt ullamco aute\"\n  },\n  {\n   \"key\": \"aut\",\n   \"value\": \"in adipisicing Lorem in dolor\"\n  }\n ]\n}"
+						},
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/products?Name=<string>&KeyWordId=<guid>&IsActive=<boolean>&MinValue=<decimal>&MaxValue=<decimal>&PageIndex=<integer>&PageSize=<integer>&SortField=<string>&SortType=<string>",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"products"
+									],
+									"query": [
+										{
+											"key": "Name",
+											"value": "<string>"
+										},
+										{
+											"key": "KeyWordId",
+											"value": "<guid>"
+										},
+										{
+											"key": "IsActive",
+											"value": "<boolean>"
+										},
+										{
+											"key": "MinValue",
+											"value": "<decimal>"
+										},
+										{
+											"key": "MaxValue",
+											"value": "<decimal>"
+										},
+										{
+											"key": "PageIndex",
+											"value": "<integer>"
+										},
+										{
+											"key": "PageSize",
+											"value": "<integer>"
+										},
+										{
+											"key": "SortField",
+											"value": "<string>"
+										},
+										{
+											"key": "SortType",
+											"value": "<string>"
+										}
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"success\": false,\n \"errors\": [\n  {\n   \"key\": \"\",\n   \"value\": \"incididunt ullamco aute\"\n  },\n  {\n   \"key\": \"aut\",\n   \"value\": \"in adipisicing Lorem in dolor\"\n  }\n ]\n}"
+						},
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/products?Name=<string>&KeyWordId=<guid>&IsActive=<boolean>&MinValue=<decimal>&MaxValue=<decimal>&PageIndex=<integer>&PageSize=<integer>&SortField=<string>&SortType=<string>",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"products"
+									],
+									"query": [
+										{
+											"key": "Name",
+											"value": "<string>"
+										},
+										{
+											"key": "KeyWordId",
+											"value": "<guid>"
+										},
+										{
+											"key": "IsActive",
+											"value": "<boolean>"
+										},
+										{
+											"key": "MinValue",
+											"value": "<decimal>"
+										},
+										{
+											"key": "MaxValue",
+											"value": "<decimal>"
+										},
+										{
+											"key": "PageIndex",
+											"value": "<integer>"
+										},
+										{
+											"key": "PageSize",
+											"value": "<integer>"
+										},
+										{
+											"key": "SortField",
+											"value": "<string>"
+										},
+										{
+											"key": "SortType",
+											"value": "<string>"
+										}
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"success\": false,\n \"errors\": [\n  {\n   \"key\": \"\",\n   \"value\": \"incididunt ullamco aute\"\n  },\n  {\n   \"key\": \"aut\",\n   \"value\": \"in adipisicing Lorem in dolor\"\n  }\n ]\n}"
+						},
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/products?Name=<string>&KeyWordId=<guid>&IsActive=<boolean>&MinValue=<decimal>&MaxValue=<decimal>&PageIndex=<integer>&PageSize=<integer>&SortField=<string>&SortType=<string>",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"products"
+									],
+									"query": [
+										{
+											"key": "Name",
+											"value": "<string>"
+										},
+										{
+											"key": "KeyWordId",
+											"value": "<guid>"
+										},
+										{
+											"key": "IsActive",
+											"value": "<boolean>"
+										},
+										{
+											"key": "MinValue",
+											"value": "<decimal>"
+										},
+										{
+											"key": "MaxValue",
+											"value": "<decimal>"
+										},
+										{
+											"key": "PageIndex",
+											"value": "<integer>"
+										},
+										{
+											"key": "PageSize",
+											"value": "<integer>"
+										},
+										{
+											"key": "SortField",
+											"value": "<string>"
+										},
+										{
+											"key": "SortType",
+											"value": "<string>"
+										}
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"success\": false,\n \"errors\": [\n  {\n   \"key\": \"\",\n   \"value\": \"incididunt ullamco aute\"\n  },\n  {\n   \"key\": \"aut\",\n   \"value\": \"in adipisicing Lorem in dolor\"\n  }\n ]\n}"
+						},
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/products?Name=<string>&KeyWordId=<guid>&IsActive=<boolean>&MinValue=<decimal>&MaxValue=<decimal>&PageIndex=<integer>&PageSize=<integer>&SortField=<string>&SortType=<string>",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"products"
+									],
+									"query": [
+										{
+											"key": "Name",
+											"value": "<string>"
+										},
+										{
+											"key": "KeyWordId",
+											"value": "<guid>"
+										},
+										{
+											"key": "IsActive",
+											"value": "<boolean>"
+										},
+										{
+											"key": "MinValue",
+											"value": "<decimal>"
+										},
+										{
+											"key": "MaxValue",
+											"value": "<decimal>"
+										},
+										{
+											"key": "PageIndex",
+											"value": "<integer>"
+										},
+										{
+											"key": "PageSize",
+											"value": "<integer>"
+										},
+										{
+											"key": "SortField",
+											"value": "<string>"
+										},
+										{
+											"key": "SortType",
+											"value": "<string>"
+										}
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"success\": false,\n \"errors\": [\n  {\n   \"key\": \"\",\n   \"value\": \"incididunt ullamco aute\"\n  },\n  {\n   \"key\": \"aut\",\n   \"value\": \"in adipisicing Lorem in dolor\"\n  }\n ]\n}"
+						},
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/products?Name=<string>&KeyWordId=<guid>&IsActive=<boolean>&MinValue=<decimal>&MaxValue=<decimal>&PageIndex=<integer>&PageSize=<integer>&SortField=<string>&SortType=<string>",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"products"
+									],
+									"query": [
+										{
+											"key": "Name",
+											"value": "<string>"
+										},
+										{
+											"key": "KeyWordId",
+											"value": "<guid>"
+										},
+										{
+											"key": "IsActive",
+											"value": "<boolean>"
+										},
+										{
+											"key": "MinValue",
+											"value": "<decimal>"
+										},
+										{
+											"key": "MaxValue",
+											"value": "<decimal>"
+										},
+										{
+											"key": "PageIndex",
+											"value": "<integer>"
+										},
+										{
+											"key": "PageSize",
+											"value": "<integer>"
+										},
+										{
+											"key": "SortField",
+											"value": "<string>"
+										},
+										{
+											"key": "SortType",
+											"value": "<string>"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"success\": true,\n \"errors\": [\n  {\n   \"key\": \"reprehenderit anim\",\n   \"value\": \"in aute esse ut deserunt\"\n  },\n  {\n   \"key\": \"irure in\",\n   \"value\": \"Duis id ad\"\n  }\n ],\n \"data\": {\n  \"totalPages\": 64752491,\n  \"totalRecords\": 72817814,\n  \"pageSize\": -1256554,\n  \"itens\": [\n   {\n    \"id\": \"occaecat anim cillum\",\n    \"isAvailable\": true,\n    \"quantity\": -46609754,\n    \"price\": 78998707.9407857,\n    \"name\": \"ut voluptate\",\n    \"description\": \"sed ut amet ea\",\n    \"keyWords\": [\n     {\n      \"id\": \"in sit\",\n      \"word\": \"minim\"\n     },\n     {\n      \"id\": \"id et lab\",\n      \"word\": \"in officia reprehenderit esse\"\n     }\n    ],\n    \"links\": [\n     {\n      \"id\": {\n       \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"imageFullPath\": {\n       \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      }\n     },\n     {\n      \"id\": {\n       \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"imageFullPath\": {\n       \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      }\n     }\n    ],\n    \"questionAndAnswers\": [\n     {\n      \"id\": {\n       \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"questionAndAnswer\": {\n       \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      }\n     },\n     {\n      \"id\": {\n       \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"questionAndAnswer\": {\n       \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      }\n     }\n    ]\n   },\n   {\n    \"id\": \"dolor anim minim\",\n    \"isAvailable\": false,\n    \"quantity\": -26142351,\n    \"price\": -42136887.30874421,\n    \"name\": \"in eiusmod tempor laborum\",\n    \"description\": \"adipisicing fugiat\",\n    \"keyWords\": [\n     {\n      \"id\": \"magna ea nulla dolor amet\",\n      \"word\": \"esse labore proident ullamco\"\n     },\n     {\n      \"id\": \"sit nostrud\",\n      \"word\": \"incididunt Ut ad\"\n     }\n    ],\n    \"links\": [\n     {\n      \"id\": {\n       \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"imageFullPath\": {\n       \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      }\n     },\n     {\n      \"id\": {\n       \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"imageFullPath\": {\n       \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      }\n     }\n    ],\n    \"questionAndAnswers\": [\n     {\n      \"id\": {\n       \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"questionAndAnswer\": {\n       \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      }\n     },\n     {\n      \"id\": {\n       \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"questionAndAnswer\": {\n       \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      }\n     }\n    ]\n   }\n  ]\n }\n}"
+						}
+					]
+				},
+				{
+					"name": "Remove Product",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{tokenAdmin}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Authorization",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/{{version}}/products/{{productId}}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"{{version}}",
+								"products",
+								"{{productId}}"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/products/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"products",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id"
+										}
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"success\": false,\n \"errors\": [\n  {\n   \"key\": \"\",\n   \"value\": \"incididunt ullamco aute\"\n  },\n  {\n   \"key\": \"aut\",\n   \"value\": \"in adipisicing Lorem in dolor\"\n  }\n ]\n}"
+						},
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/products/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"products",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id"
+										}
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"success\": false,\n \"errors\": [\n  {\n   \"key\": \"\",\n   \"value\": \"incididunt ullamco aute\"\n  },\n  {\n   \"key\": \"aut\",\n   \"value\": \"in adipisicing Lorem in dolor\"\n  }\n ]\n}"
+						},
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/products/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"products",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id"
+										}
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"success\": false,\n \"errors\": [\n  {\n   \"key\": \"\",\n   \"value\": \"incididunt ullamco aute\"\n  },\n  {\n   \"key\": \"aut\",\n   \"value\": \"in adipisicing Lorem in dolor\"\n  }\n ]\n}"
+						},
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/products/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"products",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id"
+										}
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"success\": false,\n \"errors\": [\n  {\n   \"key\": \"\",\n   \"value\": \"incididunt ullamco aute\"\n  },\n  {\n   \"key\": \"aut\",\n   \"value\": \"in adipisicing Lorem in dolor\"\n  }\n ]\n}"
+						},
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/products/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"products",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"success\": false,\n \"errors\": [\n  {\n   \"key\": \"voluptate sint id\",\n   \"value\": \"in sint Excep\"\n  },\n  {\n   \"key\": \"ipsum adipisicing\",\n   \"value\": \"dolor Duis ullamco ea\"\n  }\n ],\n \"data\": {}\n}"
+						}
+					]
+				},
+				{
+					"name": "Products Save Product Question And Answers",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "key",
+									"value": "Authorization",
+									"type": "string"
+								},
+								{
+									"key": "value",
+									"value": "<API Key>",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"questionsAndAnswers\": [\n        {\n            \"question\": \"<string>\",\n            \"answer\": \"<string>\"\n        },\n        {\n            \"question\": \"<string>\",\n            \"answer\": \"<string>\"\n        }\n    ]\n}",
+							"options": {
+								"raw": {}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/products/questions-answers/:idProduct",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"products",
+								"questions-answers",
+								":idProduct"
+							],
+							"variable": [
+								{
+									"id": "ec8f2da2-07c1-4df4-8910-f87ca4b0f212",
+									"key": "idProduct",
+									"value": "<guid>",
+									"description": "(Required) "
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"questionsAndAnswers\": [\n        {\n            \"question\": \"<string>\",\n            \"answer\": \"<string>\"\n        },\n        {\n            \"question\": \"<string>\",\n            \"answer\": \"<string>\"\n        }\n    ]\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/products/questions-answers/:idProduct",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"products",
+										"questions-answers",
+										":idProduct"
+									],
+									"variable": [
+										{
+											"key": "idProduct"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"success\": false,\n \"errors\": [\n  {\n   \"key\": \"voluptate sint id\",\n   \"value\": \"in sint Excep\"\n  },\n  {\n   \"key\": \"ipsum adipisicing\",\n   \"value\": \"dolor Duis ullamco ea\"\n  }\n ],\n \"data\": {}\n}"
+						},
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"questionsAndAnswers\": [\n        {\n            \"question\": \"<string>\",\n            \"answer\": \"<string>\"\n        },\n        {\n            \"question\": \"<string>\",\n            \"answer\": \"<string>\"\n        }\n    ]\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/products/questions-answers/:idProduct",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"products",
+										"questions-answers",
+										":idProduct"
+									],
+									"variable": [
+										{
+											"key": "idProduct"
+										}
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"success\": false,\n \"errors\": [\n  {\n   \"key\": \"\",\n   \"value\": \"incididunt ullamco aute\"\n  },\n  {\n   \"key\": \"aut\",\n   \"value\": \"in adipisicing Lorem in dolor\"\n  }\n ]\n}"
+						},
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"questionsAndAnswers\": [\n        {\n            \"question\": \"<string>\",\n            \"answer\": \"<string>\"\n        },\n        {\n            \"question\": \"<string>\",\n            \"answer\": \"<string>\"\n        }\n    ]\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/products/questions-answers/:idProduct",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"products",
+										"questions-answers",
+										":idProduct"
+									],
+									"variable": [
+										{
+											"key": "idProduct"
+										}
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"success\": false,\n \"errors\": [\n  {\n   \"key\": \"\",\n   \"value\": \"incididunt ullamco aute\"\n  },\n  {\n   \"key\": \"aut\",\n   \"value\": \"in adipisicing Lorem in dolor\"\n  }\n ]\n}"
+						},
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"questionsAndAnswers\": [\n        {\n            \"question\": \"<string>\",\n            \"answer\": \"<string>\"\n        },\n        {\n            \"question\": \"<string>\",\n            \"answer\": \"<string>\"\n        }\n    ]\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/products/questions-answers/:idProduct",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"products",
+										"questions-answers",
+										":idProduct"
+									],
+									"variable": [
+										{
+											"key": "idProduct"
+										}
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"success\": false,\n \"errors\": [\n  {\n   \"key\": \"\",\n   \"value\": \"incididunt ullamco aute\"\n  },\n  {\n   \"key\": \"aut\",\n   \"value\": \"in adipisicing Lorem in dolor\"\n  }\n ]\n}"
+						},
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"questionsAndAnswers\": [\n        {\n            \"question\": \"<string>\",\n            \"answer\": \"<string>\"\n        },\n        {\n            \"question\": \"<string>\",\n            \"answer\": \"<string>\"\n        }\n    ]\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/products/questions-answers/:idProduct",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"products",
+										"questions-answers",
+										":idProduct"
+									],
+									"variable": [
+										{
+											"key": "idProduct"
+										}
+									]
+								}
+							},
+							"status": "Unprocessable Entity (WebDAV) (RFC 4918)",
+							"code": 422,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"success\": false,\n \"errors\": [\n  {\n   \"key\": \"\",\n   \"value\": \"incididunt ullamco aute\"\n  },\n  {\n   \"key\": \"aut\",\n   \"value\": \"in adipisicing Lorem in dolor\"\n  }\n ]\n}"
+						},
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"questionsAndAnswers\": [\n        {\n            \"question\": \"<string>\",\n            \"answer\": \"<string>\"\n        },\n        {\n            \"question\": \"<string>\",\n            \"answer\": \"<string>\"\n        }\n    ]\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/products/questions-answers/:idProduct",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"products",
+										"questions-answers",
+										":idProduct"
+									],
+									"variable": [
+										{
+											"key": "idProduct"
+										}
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"success\": false,\n \"errors\": [\n  {\n   \"key\": \"\",\n   \"value\": \"incididunt ullamco aute\"\n  },\n  {\n   \"key\": \"aut\",\n   \"value\": \"in adipisicing Lorem in dolor\"\n  }\n ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Products Update Product Quantity",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "key",
+									"value": "Authorization",
+									"type": "string"
+								},
+								{
+									"key": "value",
+									"value": "<API Key>",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"quantity\": \"<integer>\"\n}",
+							"options": {
+								"raw": {}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/products/stock/:id",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"products",
+								"stock",
+								":id"
+							],
+							"variable": [
+								{
+									"id": "5099ba9a-84a1-40d3-8d65-5b75931f0015",
+									"key": "id",
+									"value": "<guid>",
+									"description": "(Required) "
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"quantity\": \"<integer>\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/products/stock/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"products",
+										"stock",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id"
+										}
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"success\": false,\n \"errors\": [\n  {\n   \"key\": \"\",\n   \"value\": \"incididunt ullamco aute\"\n  },\n  {\n   \"key\": \"aut\",\n   \"value\": \"in adipisicing Lorem in dolor\"\n  }\n ]\n}"
+						},
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"quantity\": \"<integer>\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/products/stock/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"products",
+										"stock",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id"
+										}
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"success\": false,\n \"errors\": [\n  {\n   \"key\": \"\",\n   \"value\": \"incididunt ullamco aute\"\n  },\n  {\n   \"key\": \"aut\",\n   \"value\": \"in adipisicing Lorem in dolor\"\n  }\n ]\n}"
+						},
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"quantity\": \"<integer>\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/products/stock/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"products",
+										"stock",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id"
+										}
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"success\": false,\n \"errors\": [\n  {\n   \"key\": \"\",\n   \"value\": \"incididunt ullamco aute\"\n  },\n  {\n   \"key\": \"aut\",\n   \"value\": \"in adipisicing Lorem in dolor\"\n  }\n ]\n}"
+						},
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"quantity\": \"<integer>\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/products/stock/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"products",
+										"stock",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id"
+										}
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"success\": false,\n \"errors\": [\n  {\n   \"key\": \"\",\n   \"value\": \"incididunt ullamco aute\"\n  },\n  {\n   \"key\": \"aut\",\n   \"value\": \"in adipisicing Lorem in dolor\"\n  }\n ]\n}"
+						},
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"quantity\": \"<integer>\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/products/stock/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"products",
+										"stock",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id"
+										}
+									]
+								}
+							},
+							"status": "Unprocessable Entity (WebDAV) (RFC 4918)",
+							"code": 422,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"success\": false,\n \"errors\": [\n  {\n   \"key\": \"\",\n   \"value\": \"incididunt ullamco aute\"\n  },\n  {\n   \"key\": \"aut\",\n   \"value\": \"in adipisicing Lorem in dolor\"\n  }\n ]\n}"
+						},
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"quantity\": \"<integer>\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/products/stock/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"products",
+										"stock",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"success\": false,\n \"errors\": [\n  {\n   \"key\": \"voluptate sint id\",\n   \"value\": \"in sint Excep\"\n  },\n  {\n   \"key\": \"ipsum adipisicing\",\n   \"value\": \"dolor Duis ullamco ea\"\n  }\n ],\n \"data\": {}\n}"
+						}
+					]
+				},
+				{
+					"name": "Products Update Product",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "key",
+									"value": "Authorization",
+									"type": "string"
+								},
+								{
+									"key": "value",
+									"value": "<API Key>",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "\"<object>\"",
+							"options": {
+								"raw": {}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/{{version}}/products/:id",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"{{version}}",
+								"products",
+								":id"
+							],
+							"variable": [
+								{
+									"id": "b552587d-3ffd-408e-ac17-ef20d071325b",
+									"key": "id",
+									"value": "<guid>",
+									"description": "(Required) "
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "\"<object>\""
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/products/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"products",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id"
+										}
+									]
+								}
+							},
+							"status": "Unprocessable Entity (WebDAV) (RFC 4918)",
+							"code": 422,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"success\": false,\n \"errors\": [\n  {\n   \"key\": \"\",\n   \"value\": \"incididunt ullamco aute\"\n  },\n  {\n   \"key\": \"aut\",\n   \"value\": \"in adipisicing Lorem in dolor\"\n  }\n ]\n}"
+						},
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "\"<object>\""
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/products/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"products",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id"
+										}
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"success\": false,\n \"errors\": [\n  {\n   \"key\": \"\",\n   \"value\": \"incididunt ullamco aute\"\n  },\n  {\n   \"key\": \"aut\",\n   \"value\": \"in adipisicing Lorem in dolor\"\n  }\n ]\n}"
+						},
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "\"<object>\""
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/products/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"products",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id"
+										}
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"success\": false,\n \"errors\": [\n  {\n   \"key\": \"\",\n   \"value\": \"incididunt ullamco aute\"\n  },\n  {\n   \"key\": \"aut\",\n   \"value\": \"in adipisicing Lorem in dolor\"\n  }\n ]\n}"
+						},
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "\"<object>\""
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/products/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"products",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id"
+										}
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"success\": false,\n \"errors\": [\n  {\n   \"key\": \"\",\n   \"value\": \"incididunt ullamco aute\"\n  },\n  {\n   \"key\": \"aut\",\n   \"value\": \"in adipisicing Lorem in dolor\"\n  }\n ]\n}"
+						},
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "\"<object>\""
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/products/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"products",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id"
+										}
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"success\": false,\n \"errors\": [\n  {\n   \"key\": \"\",\n   \"value\": \"incididunt ullamco aute\"\n  },\n  {\n   \"key\": \"aut\",\n   \"value\": \"in adipisicing Lorem in dolor\"\n  }\n ]\n}"
+						},
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "\"<object>\""
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/products/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"products",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"success\": false,\n \"errors\": [\n  {\n   \"key\": \"in consequat dolore aute magna\",\n   \"value\": \"eu culpa\"\n  },\n  {\n   \"key\": \"irure incididunt\",\n   \"value\": \"sit Excepteur adipisicing Duis cillum\"\n  }\n ],\n \"data\": {\n  \"productId\": \"irure occaecat qui magna\"\n }\n}"
+						}
+					]
+				},
+				{
+					"name": "Products Get Product By Id",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "key",
+									"value": "Authorization",
+									"type": "string"
+								},
+								{
+									"key": "value",
+									"value": "<API Key>",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/products/:id",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"products",
+								":id"
+							],
+							"variable": [
+								{
+									"id": "2834eb73-09ab-4a5e-bbf4-0e558b0f59b3",
+									"key": "id",
+									"value": "<guid>",
+									"description": "(Required) "
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/products/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"products",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id"
+										}
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"success\": false,\n \"errors\": [\n  {\n   \"key\": \"\",\n   \"value\": \"incididunt ullamco aute\"\n  },\n  {\n   \"key\": \"aut\",\n   \"value\": \"in adipisicing Lorem in dolor\"\n  }\n ]\n}"
+						},
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/products/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"products",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"success\": true,\n \"errors\": [\n  {\n   \"key\": \"voluptate officia\",\n   \"value\": \"sint enim\"\n  },\n  {\n   \"key\": \"dolor ea\",\n   \"value\": \"Duis aliqua sit\"\n  }\n ],\n \"data\": {\n  \"id\": \"velit exercitation ex\",\n  \"isAvailable\": false,\n  \"quantity\": 84910071,\n  \"price\": 81814993.12143132,\n  \"name\": \"velit\",\n  \"description\": \"Ut eu fugiat eiusmod incididunt\",\n  \"keyWords\": [\n   {\n    \"id\": \"incididunt aute officia\",\n    \"word\": \"commodo in\"\n   },\n   {\n    \"id\": \"aliqua cupidatat qui\",\n    \"word\": \"ea officia\"\n   }\n  ],\n  \"links\": [\n   {\n    \"id\": \"tempor dolo\",\n    \"imageFullPath\": \"Excepteur in eiusmod\"\n   },\n   {\n    \"id\": \"voluptate ut eiusmod\",\n    \"imageFullPath\": \"cillum Duis\"\n   }\n  ],\n  \"questionAndAnswers\": [\n   {\n    \"id\": \"sit eu enim\",\n    \"questionAndAnswer\": {\n     \"question\": \"<string>\",\n     \"answer\": \"<string>\"\n    }\n   },\n   {\n    \"id\": \"sed nisi id\",\n    \"questionAndAnswer\": {\n     \"question\": \"<string>\",\n     \"answer\": \"<string>\"\n    }\n   }\n  ]\n }\n}"
+						},
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/products/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"products",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id"
+										}
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"success\": false,\n \"errors\": [\n  {\n   \"key\": \"\",\n   \"value\": \"incididunt ullamco aute\"\n  },\n  {\n   \"key\": \"aut\",\n   \"value\": \"in adipisicing Lorem in dolor\"\n  }\n ]\n}"
+						},
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/products/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"products",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id"
+										}
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"success\": false,\n \"errors\": [\n  {\n   \"key\": \"\",\n   \"value\": \"incididunt ullamco aute\"\n  },\n  {\n   \"key\": \"aut\",\n   \"value\": \"in adipisicing Lorem in dolor\"\n  }\n ]\n}"
+						},
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/products/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"products",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id"
+										}
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"success\": false,\n \"errors\": [\n  {\n   \"key\": \"\",\n   \"value\": \"incididunt ullamco aute\"\n  },\n  {\n   \"key\": \"aut\",\n   \"value\": \"in adipisicing Lorem in dolor\"\n  }\n ]\n}"
+						}
+					]
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "key-words",
+			"item": [
+				{
+					"name": "Get Key Words",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{tokenAdmin}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/{{version}}/key-words",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"{{version}}",
+								"key-words"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/key-words",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"key-words"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"success\": false,\n \"errors\": [\n  {\n   \"key\": \"\",\n   \"value\": \"incididunt ullamco aute\"\n  },\n  {\n   \"key\": \"aut\",\n   \"value\": \"in adipisicing Lorem in dolor\"\n  }\n ]\n}"
+						},
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/key-words",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"key-words"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"success\": false,\n \"errors\": [\n  {\n   \"key\": \"\",\n   \"value\": \"incididunt ullamco aute\"\n  },\n  {\n   \"key\": \"aut\",\n   \"value\": \"in adipisicing Lorem in dolor\"\n  }\n ]\n}"
+						},
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/key-words",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"key-words"
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"success\": false,\n \"errors\": [\n  {\n   \"key\": \"\",\n   \"value\": \"incididunt ullamco aute\"\n  },\n  {\n   \"key\": \"aut\",\n   \"value\": \"in adipisicing Lorem in dolor\"\n  }\n ]\n}"
+						},
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/key-words",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"key-words"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"success\": false,\n \"errors\": [\n  {\n   \"key\": \"\",\n   \"value\": \"incididunt ullamco aute\"\n  },\n  {\n   \"key\": \"aut\",\n   \"value\": \"in adipisicing Lorem in dolor\"\n  }\n ]\n}"
+						},
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/key-words",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"key-words"
+									]
+								}
+							},
+							"status": "Unprocessable Entity (WebDAV) (RFC 4918)",
+							"code": 422,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"success\": false,\n \"errors\": [\n  {\n   \"key\": \"\",\n   \"value\": \"incididunt ullamco aute\"\n  },\n  {\n   \"key\": \"aut\",\n   \"value\": \"in adipisicing Lorem in dolor\"\n  }\n ]\n}"
+						},
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/key-words",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"key-words"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"success\": false,\n \"errors\": [\n  {\n   \"key\": \"culpa eu\",\n   \"value\": \"eu aliqua in\"\n  },\n  {\n   \"key\": \"in ex\",\n   \"value\": \"minim f\"\n  }\n ],\n \"data\": [\n  {\n   \"id\": \"eius\",\n   \"word\": \"proident laborum ad Ut sunt\"\n  },\n  {\n   \"id\": \"esse\",\n   \"word\": \"esse Ut sit\"\n  }\n ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Create Key Word",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json-patch+json"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{tokenAdmin}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"word\": \"palavra chave 2\"\n}",
+							"options": {
+								"raw": {}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/{{version}}/key-words",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"{{version}}",
+								"key-words"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"word\": \"<string>\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/key-words",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"key-words"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"success\": false,\n \"errors\": [\n  {\n   \"key\": \"\",\n   \"value\": \"incididunt ullamco aute\"\n  },\n  {\n   \"key\": \"aut\",\n   \"value\": \"in adipisicing Lorem in dolor\"\n  }\n ]\n}"
+						},
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"word\": \"<string>\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/key-words",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"key-words"
+									]
+								}
+							},
+							"status": "Unprocessable Entity (WebDAV) (RFC 4918)",
+							"code": 422,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"success\": false,\n \"errors\": [\n  {\n   \"key\": \"\",\n   \"value\": \"incididunt ullamco aute\"\n  },\n  {\n   \"key\": \"aut\",\n   \"value\": \"in adipisicing Lorem in dolor\"\n  }\n ]\n}"
+						},
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"word\": \"<string>\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/key-words",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"key-words"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"success\": false,\n \"errors\": [\n  {\n   \"key\": \"\",\n   \"value\": \"incididunt ullamco aute\"\n  },\n  {\n   \"key\": \"aut\",\n   \"value\": \"in adipisicing Lorem in dolor\"\n  }\n ]\n}"
+						},
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"word\": \"<string>\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/key-words",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"key-words"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"success\": false,\n \"errors\": [\n  {\n   \"key\": \"voluptate sint id\",\n   \"value\": \"in sint Excep\"\n  },\n  {\n   \"key\": \"ipsum adipisicing\",\n   \"value\": \"dolor Duis ullamco ea\"\n  }\n ],\n \"data\": {}\n}"
+						},
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"word\": \"<string>\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/key-words",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"key-words"
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"success\": false,\n \"errors\": [\n  {\n   \"key\": \"\",\n   \"value\": \"incididunt ullamco aute\"\n  },\n  {\n   \"key\": \"aut\",\n   \"value\": \"in adipisicing Lorem in dolor\"\n  }\n ]\n}"
+						},
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"word\": \"<string>\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/key-words",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"key-words"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"success\": false,\n \"errors\": [\n  {\n   \"key\": \"\",\n   \"value\": \"incididunt ullamco aute\"\n  },\n  {\n   \"key\": \"aut\",\n   \"value\": \"in adipisicing Lorem in dolor\"\n  }\n ]\n}"
+						}
+					]
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "shopper-address",
+			"item": [
+				{
+					"name": "Address Get Addresses",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "key",
+									"value": "Authorization",
+									"type": "string"
+								},
+								{
+									"key": "value",
+									"value": "<API Key>",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/shopper-address",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"shopper-address"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/shopper-address",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"shopper-address"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": "in pariatur ut proident consectetur"
+						}
+					]
+				},
+				{
+					"name": "Address Create Address",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "key",
+									"value": "Authorization",
+									"type": "string"
+								},
+								{
+									"key": "value",
+									"value": "<API Key>",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"type\": \"<string>\",\n    \"name\": \"<string>\",\n    \"address\": {\n        \"placeName\": \"<string>\",\n        \"number\": \"<string>\",\n        \"complement\": \"<string>\",\n        \"district\": \"<string>\",\n        \"zipCode\": \"<string>\",\n        \"city\": \"<string>\",\n        \"state\": \"<string>\",\n        \"country\": \"<string>\",\n        \"complete\": \"<string>\"\n    }\n}",
+							"options": {
+								"raw": {}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/shopper-address",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"shopper-address"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"type\": \"<string>\",\n    \"name\": \"<string>\",\n    \"address\": {\n        \"placeName\": \"<string>\",\n        \"number\": \"<string>\",\n        \"complement\": \"<string>\",\n        \"district\": \"<string>\",\n        \"zipCode\": \"<string>\",\n        \"city\": \"<string>\",\n        \"state\": \"<string>\",\n        \"country\": \"<string>\",\n        \"complete\": \"<string>\"\n    }\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/shopper-address",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"shopper-address"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": "in pariatur ut proident consectetur"
+						}
+					]
+				},
+				{
+					"name": "Address Update Address",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "key",
+									"value": "Authorization",
+									"type": "string"
+								},
+								{
+									"key": "value",
+									"value": "<API Key>",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"<guid>\",\n    \"type\": \"<string>\",\n    \"name\": \"<string>\",\n    \"address\": {\n        \"placeName\": \"<string>\",\n        \"number\": \"<string>\",\n        \"complement\": \"<string>\",\n        \"district\": \"<string>\",\n        \"zipCode\": \"<string>\",\n        \"city\": \"<string>\",\n        \"state\": \"<string>\",\n        \"country\": \"<string>\",\n        \"complete\": \"<string>\"\n    }\n}",
+							"options": {
+								"raw": {}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/shopper-address/:id",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"shopper-address",
+								":id"
+							],
+							"variable": [
+								{
+									"id": "cd4c2031-ff2f-43f6-a127-729065456811",
+									"key": "id",
+									"value": "<guid>",
+									"description": "(Required) "
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": \"<guid>\",\n    \"type\": \"<string>\",\n    \"name\": \"<string>\",\n    \"address\": {\n        \"placeName\": \"<string>\",\n        \"number\": \"<string>\",\n        \"complement\": \"<string>\",\n        \"district\": \"<string>\",\n        \"zipCode\": \"<string>\",\n        \"city\": \"<string>\",\n        \"state\": \"<string>\",\n        \"country\": \"<string>\",\n        \"complete\": \"<string>\"\n    }\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/shopper-address/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"shopper-address",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": "in pariatur ut proident consectetur"
+						}
+					]
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "orders",
+			"item": [
+				{
+					"name": "{id}",
+					"item": [
+						{
+							"name": "Orders Get Order Byid",
+							"request": {
+								"auth": {
+									"type": "apikey",
+									"apikey": [
+										{
+											"key": "key",
+											"value": "Authorization",
+											"type": "string"
+										},
+										{
+											"key": "value",
+											"value": "<API Key>",
+											"type": "string"
+										},
+										{
+											"key": "in",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/orders/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"orders",
+										":id"
+									],
+									"variable": [
+										{
+											"id": "166200f5-6a19-47ca-8829-e13f5388de13",
+											"key": "id",
+											"value": "<guid>",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Untitled Example",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"description": "Added as a part of security scheme: apikey",
+												"key": "Authorization",
+												"value": "<API Key>"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/v1/orders/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"orders",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": "in pariatur ut proident consectetur"
+								}
+							]
+						},
+						{
+							"name": "Orders Change Order Status",
+							"request": {
+								"auth": {
+									"type": "apikey",
+									"apikey": [
+										{
+											"key": "key",
+											"value": "Authorization",
+											"type": "string"
+										},
+										{
+											"key": "value",
+											"value": "<API Key>",
+											"type": "string"
+										},
+										{
+											"key": "in",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"status\": \"<string>\"\n}",
+									"options": {
+										"raw": {}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/orders/:id/status",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"orders",
+										":id",
+										"status"
+									],
+									"variable": [
+										{
+											"id": "bcc75274-c249-414f-802c-862613927653",
+											"key": "id",
+											"value": "<guid>",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Untitled Example",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [
+											{
+												"description": "Added as a part of security scheme: apikey",
+												"key": "Authorization",
+												"value": "<API Key>"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"status\": \"<string>\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/v1/orders/:id/status",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"orders",
+												":id",
+												"status"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": "in pariatur ut proident consectetur"
+								}
+							]
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Orders Finalize Order",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "key",
+									"value": "Authorization",
+									"type": "string"
+								},
+								{
+									"key": "value",
+									"value": "<API Key>",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"itens\": [\n        {\n            \"productId\": \"<guid>\",\n            \"qt\": \"<integer>\"\n        },\n        {\n            \"productId\": \"<guid>\",\n            \"qt\": \"<integer>\"\n        }\n    ],\n    \"shippingAddressId\": \"<guid>\",\n    \"paymentMethod\": \"<string>\",\n    \"creditCard\": {\n        \"expirationDate\": \"<dateTime>\",\n        \"number\": \"<string>\",\n        \"cvv\": \"<string>\"\n    }\n}",
+							"options": {
+								"raw": {}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/orders",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"orders"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"itens\": [\n        {\n            \"productId\": \"<guid>\",\n            \"qt\": \"<integer>\"\n        },\n        {\n            \"productId\": \"<guid>\",\n            \"qt\": \"<integer>\"\n        }\n    ],\n    \"shippingAddressId\": \"<guid>\",\n    \"paymentMethod\": \"<string>\",\n    \"creditCard\": {\n        \"expirationDate\": \"<dateTime>\",\n        \"number\": \"<string>\",\n        \"cvv\": \"<string>\"\n    }\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/orders",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"orders"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": "in pariatur ut proident consectetur"
+						}
+					]
+				},
+				{
+					"name": "Orders Get All Orders",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "key",
+									"value": "Authorization",
+									"type": "string"
+								},
+								{
+									"key": "value",
+									"value": "<API Key>",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/orders?PageIndex=<integer>&PageSize=<integer>&SortField=<string>&SortType=<string>",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"orders"
+							],
+							"query": [
+								{
+									"key": "PageIndex",
+									"value": "<integer>"
+								},
+								{
+									"key": "PageSize",
+									"value": "<integer>"
+								},
+								{
+									"key": "SortField",
+									"value": "<string>"
+								},
+								{
+									"key": "SortType",
+									"value": "<string>"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/orders?PageIndex=<integer>&PageSize=<integer>&SortField=<string>&SortType=<string>",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"orders"
+									],
+									"query": [
+										{
+											"key": "PageIndex",
+											"value": "<integer>"
+										},
+										{
+											"key": "PageSize",
+											"value": "<integer>"
+										},
+										{
+											"key": "SortField",
+											"value": "<string>"
+										},
+										{
+											"key": "SortType",
+											"value": "<string>"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": "in pariatur ut proident consectetur"
+						}
+					]
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "questions-and-answers/{id}",
+			"item": [
+				{
+					"name": "Question And Answers Update Product QA",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "key",
+									"value": "Authorization",
+									"type": "string"
+								},
+								{
+									"key": "value",
+									"value": "<API Key>",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"questionsAndAnswer\": {\n        \"question\": \"<string>\",\n        \"answer\": \"<string>\"\n    }\n}",
+							"options": {
+								"raw": {}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/questions-and-answers/:id",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"questions-and-answers",
+								":id"
+							],
+							"variable": [
+								{
+									"id": "1e832927-f700-4de0-a6ab-d835ed72fa26",
+									"key": "id",
+									"value": "<guid>",
+									"description": "(Required) "
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"questionsAndAnswer\": {\n        \"question\": \"<string>\",\n        \"answer\": \"<string>\"\n    }\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/questions-and-answers/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"questions-and-answers",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id"
+										}
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"success\": false,\n \"errors\": [\n  {\n   \"key\": \"\",\n   \"value\": \"incididunt ullamco aute\"\n  },\n  {\n   \"key\": \"aut\",\n   \"value\": \"in adipisicing Lorem in dolor\"\n  }\n ]\n}"
+						},
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"questionsAndAnswer\": {\n        \"question\": \"<string>\",\n        \"answer\": \"<string>\"\n    }\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/questions-and-answers/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"questions-and-answers",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id"
+										}
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"success\": false,\n \"errors\": [\n  {\n   \"key\": \"\",\n   \"value\": \"incididunt ullamco aute\"\n  },\n  {\n   \"key\": \"aut\",\n   \"value\": \"in adipisicing Lorem in dolor\"\n  }\n ]\n}"
+						},
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"questionsAndAnswer\": {\n        \"question\": \"<string>\",\n        \"answer\": \"<string>\"\n    }\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/questions-and-answers/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"questions-and-answers",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id"
+										}
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"success\": false,\n \"errors\": [\n  {\n   \"key\": \"\",\n   \"value\": \"incididunt ullamco aute\"\n  },\n  {\n   \"key\": \"aut\",\n   \"value\": \"in adipisicing Lorem in dolor\"\n  }\n ]\n}"
+						},
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"questionsAndAnswer\": {\n        \"question\": \"<string>\",\n        \"answer\": \"<string>\"\n    }\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/questions-and-answers/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"questions-and-answers",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id"
+										}
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"success\": false,\n \"errors\": [\n  {\n   \"key\": \"\",\n   \"value\": \"incididunt ullamco aute\"\n  },\n  {\n   \"key\": \"aut\",\n   \"value\": \"in adipisicing Lorem in dolor\"\n  }\n ]\n}"
+						},
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"questionsAndAnswer\": {\n        \"question\": \"<string>\",\n        \"answer\": \"<string>\"\n    }\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/questions-and-answers/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"questions-and-answers",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"success\": false,\n \"errors\": [\n  {\n   \"key\": \"voluptate sint id\",\n   \"value\": \"in sint Excep\"\n  },\n  {\n   \"key\": \"ipsum adipisicing\",\n   \"value\": \"dolor Duis ullamco ea\"\n  }\n ],\n \"data\": {}\n}"
+						}
+					]
+				},
+				{
+					"name": "Question And Answers Delete Product QA",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "key",
+									"value": "Authorization",
+									"type": "string"
+								},
+								{
+									"key": "value",
+									"value": "<API Key>",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/questions-and-answers/:id",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"questions-and-answers",
+								":id"
+							],
+							"variable": [
+								{
+									"id": "811269b5-0320-44cd-8d0d-06b1b542b843",
+									"key": "id",
+									"value": "<guid>",
+									"description": "(Required) "
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/questions-and-answers/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"questions-and-answers",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id"
+										}
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"success\": false,\n \"errors\": [\n  {\n   \"key\": \"\",\n   \"value\": \"incididunt ullamco aute\"\n  },\n  {\n   \"key\": \"aut\",\n   \"value\": \"in adipisicing Lorem in dolor\"\n  }\n ]\n}"
+						},
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/questions-and-answers/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"questions-and-answers",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id"
+										}
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"success\": false,\n \"errors\": [\n  {\n   \"key\": \"\",\n   \"value\": \"incididunt ullamco aute\"\n  },\n  {\n   \"key\": \"aut\",\n   \"value\": \"in adipisicing Lorem in dolor\"\n  }\n ]\n}"
+						},
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/questions-and-answers/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"questions-and-answers",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id"
+										}
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"success\": false,\n \"errors\": [\n  {\n   \"key\": \"\",\n   \"value\": \"incididunt ullamco aute\"\n  },\n  {\n   \"key\": \"aut\",\n   \"value\": \"in adipisicing Lorem in dolor\"\n  }\n ]\n}"
+						},
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/questions-and-answers/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"questions-and-answers",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id"
+										}
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"success\": false,\n \"errors\": [\n  {\n   \"key\": \"\",\n   \"value\": \"incididunt ullamco aute\"\n  },\n  {\n   \"key\": \"aut\",\n   \"value\": \"in adipisicing Lorem in dolor\"\n  }\n ]\n}"
+						},
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/questions-and-answers/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"questions-and-answers",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"success\": false,\n \"errors\": [\n  {\n   \"key\": \"voluptate sint id\",\n   \"value\": \"in sint Excep\"\n  },\n  {\n   \"key\": \"ipsum adipisicing\",\n   \"value\": \"dolor Duis ullamco ea\"\n  }\n ],\n \"data\": {}\n}"
+						}
+					]
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "shoppers",
+			"item": [
+				{
+					"name": "Shoppers Create Shopper",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "key",
+									"value": "Authorization",
+									"type": "string"
+								},
+								{
+									"key": "value",
+									"value": "<API Key>",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"<string>\",\n    \"cpf\": {\n        \"number\": \"<string>\"\n    },\n    \"name\": \"<string>\",\n    \"address\": {\n        \"placeName\": \"<string>\",\n        \"number\": \"<string>\",\n        \"complement\": \"<string>\",\n        \"district\": \"<string>\",\n        \"zipCode\": \"<string>\",\n        \"city\": \"<string>\",\n        \"state\": \"<string>\",\n        \"country\": \"<string>\",\n        \"complete\": \"<string>\"\n    },\n    \"password\": \"<string>\"\n}",
+							"options": {
+								"raw": {}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/shoppers",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"shoppers"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\": \"<string>\",\n    \"cpf\": {\n        \"number\": \"<string>\"\n    },\n    \"name\": \"<string>\",\n    \"address\": {\n        \"placeName\": \"<string>\",\n        \"number\": \"<string>\",\n        \"complement\": \"<string>\",\n        \"district\": \"<string>\",\n        \"zipCode\": \"<string>\",\n        \"city\": \"<string>\",\n        \"state\": \"<string>\",\n        \"country\": \"<string>\",\n        \"complete\": \"<string>\"\n    },\n    \"password\": \"<string>\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/shoppers",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"shoppers"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": "in pariatur ut proident consectetur"
+						}
+					]
+				},
+				{
+					"name": "Shoppers Self Update Shopper",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "key",
+									"value": "Authorization",
+									"type": "string"
+								},
+								{
+									"key": "value",
+									"value": "<API Key>",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "\"<object>\"",
+							"options": {
+								"raw": {}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/shoppers",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"shoppers"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "\"<object>\""
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/shoppers",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"shoppers"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": "in pariatur ut proident consectetur"
+						}
+					]
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "{id}",
+					"item": [
+						{
+							"name": "Users Update User",
+							"request": {
+								"auth": {
+									"type": "apikey",
+									"apikey": [
+										{
+											"key": "key",
+											"value": "Authorization",
+											"type": "string"
+										},
+										{
+											"key": "value",
+											"value": "<API Key>",
+											"type": "string"
+										},
+										{
+											"key": "in",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": \"<guid>\",\n    \"userType\": \"<string>\",\n    \"email\": \"<string>\",\n    \"name\": \"<string>\"\n}",
+									"options": {
+										"raw": {}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/users/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"users",
+										":id"
+									],
+									"variable": [
+										{
+											"id": "76f582e1-1b64-4e42-8f35-7f29d4cbd366",
+											"key": "id",
+											"value": "<guid>",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Untitled Example",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [
+											{
+												"description": "Added as a part of security scheme: apikey",
+												"key": "Authorization",
+												"value": "<API Key>"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"id\": \"<guid>\",\n    \"userType\": \"<string>\",\n    \"email\": \"<string>\",\n    \"name\": \"<string>\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/v1/users/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"users",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": "in pariatur ut proident consectetur"
+								}
+							]
+						},
+						{
+							"name": "Users Change User Status",
+							"request": {
+								"auth": {
+									"type": "apikey",
+									"apikey": [
+										{
+											"key": "key",
+											"value": "Authorization",
+											"type": "string"
+										},
+										{
+											"key": "value",
+											"value": "<API Key>",
+											"type": "string"
+										},
+										{
+											"key": "in",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/users/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"users",
+										":id"
+									],
+									"variable": [
+										{
+											"id": "52cd759a-fe1e-4d7d-a81e-8acd3ecd2e27",
+											"key": "id",
+											"value": "<guid>",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Untitled Example",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [
+											{
+												"description": "Added as a part of security scheme: apikey",
+												"key": "Authorization",
+												"value": "<API Key>"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/v1/users/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"users",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": "in pariatur ut proident consectetur"
+								}
+							]
+						},
+						{
+							"name": "Users Get User Byid",
+							"request": {
+								"auth": {
+									"type": "apikey",
+									"apikey": [
+										{
+											"key": "key",
+											"value": "Authorization",
+											"type": "string"
+										},
+										{
+											"key": "value",
+											"value": "<API Key>",
+											"type": "string"
+										},
+										{
+											"key": "in",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/users/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"users",
+										":id"
+									],
+									"variable": [
+										{
+											"id": "a3c91e7a-6798-428a-834e-7ec14687ac6e",
+											"key": "id",
+											"value": "<guid>",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Untitled Example",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"description": "Added as a part of security scheme: apikey",
+												"key": "Authorization",
+												"value": "<API Key>"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/v1/users/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"users",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": "in pariatur ut proident consectetur"
+								}
+							]
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Users Create User",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"content-type": true,
+							"accept": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json-patch+json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"euadmin2@email.com\",\n    \"name\": \"Eu Admin 2\",\n    \"password\": \"123456\",\n    \"userType\": \"Administrator\"\n}",
+							"options": {
+								"raw": {}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/{{version}}/users",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"{{version}}",
+								"users"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"userType\": \"<string>\",\n    \"email\": \"<string>\",\n    \"password\": \"<string>\",\n    \"name\": \"<string>\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/users",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"users"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": "in pariatur ut proident consectetur"
+						}
+					]
+				},
+				{
+					"name": "Users Get Users",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "key",
+									"value": "Authorization",
+									"type": "string"
+								},
+								{
+									"key": "value",
+									"value": "<API Key>",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/users?Name=<string>&Email=<string>&PageIndex=<integer>&PageSize=<integer>&SortField=<string>&SortType=<string>",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users"
+							],
+							"query": [
+								{
+									"key": "Name",
+									"value": "<string>"
+								},
+								{
+									"key": "Email",
+									"value": "<string>"
+								},
+								{
+									"key": "PageIndex",
+									"value": "<integer>"
+								},
+								{
+									"key": "PageSize",
+									"value": "<integer>"
+								},
+								{
+									"key": "SortField",
+									"value": "<string>"
+								},
+								{
+									"key": "SortType",
+									"value": "<string>"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/users?Name=<string>&Email=<string>&PageIndex=<integer>&PageSize=<integer>&SortField=<string>&SortType=<string>",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"users"
+									],
+									"query": [
+										{
+											"key": "Name",
+											"value": "<string>"
+										},
+										{
+											"key": "Email",
+											"value": "<string>"
+										},
+										{
+											"key": "PageIndex",
+											"value": "<integer>"
+										},
+										{
+											"key": "PageSize",
+											"value": "<integer>"
+										},
+										{
+											"key": "SortField",
+											"value": "<string>"
+										},
+										{
+											"key": "SortType",
+											"value": "<string>"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": "in pariatur ut proident consectetur"
+						}
+					]
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Authorize",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "94c00729-87e0-4e5b-8098-4e10be68e11b",
+						"exec": [
+							"pm.environment.set('tokenAdmin', 'Bearer ' + pm.response.json().data.token);",
+							"",
+							"",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json-patch+json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"euadmin@email.com\",\n    \"senha\": \"123456\"\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/{{version}}/auth",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"{{version}}",
+						"auth"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Untitled Example",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"description": "Added as a part of security scheme: apikey",
+								"key": "Authorization",
+								"value": "<API Key>"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"<string>\",\n    \"senha\": \"<string>\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/auth",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"auth"
+							]
+						}
+					},
+					"status": "Unprocessable Entity (WebDAV) (RFC 4918)",
+					"code": 422,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"success\": false,\n \"errors\": [\n  {\n   \"key\": \"\",\n   \"value\": \"incididunt ullamco aute\"\n  },\n  {\n   \"key\": \"aut\",\n   \"value\": \"in adipisicing Lorem in dolor\"\n  }\n ]\n}"
+				},
+				{
+					"name": "Untitled Example",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"description": "Added as a part of security scheme: apikey",
+								"key": "Authorization",
+								"value": "<API Key>"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"<string>\",\n    \"senha\": \"<string>\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/auth",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"auth"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"success\": false,\n \"errors\": [\n  {\n   \"key\": \"mollit\",\n   \"value\": \"pariatur tempor fugiat\"\n  },\n  {\n   \"key\": \"pariatur aliquip\",\n   \"value\": \"in laboris ex ut\"\n  }\n ],\n \"data\": {\n  \"token\": \"l\",\n  \"userInfo\": {}\n }\n}"
+				},
+				{
+					"name": "Untitled Example",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"description": "Added as a part of security scheme: apikey",
+								"key": "Authorization",
+								"value": "<API Key>"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"<string>\",\n    \"senha\": \"<string>\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/auth",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"auth"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"success\": false,\n \"errors\": [\n  {\n   \"key\": \"\",\n   \"value\": \"incididunt ullamco aute\"\n  },\n  {\n   \"key\": \"aut\",\n   \"value\": \"in adipisicing Lorem in dolor\"\n  }\n ]\n}"
+				},
+				{
+					"name": "Untitled Example",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"description": "Added as a part of security scheme: apikey",
+								"key": "Authorization",
+								"value": "<API Key>"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"<string>\",\n    \"senha\": \"<string>\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/auth",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"auth"
+							]
+						}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"success\": false,\n \"errors\": [\n  {\n   \"key\": \"\",\n   \"value\": \"incididunt ullamco aute\"\n  },\n  {\n   \"key\": \"aut\",\n   \"value\": \"in adipisicing Lorem in dolor\"\n  }\n ]\n}"
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "key",
+				"value": "Authorization",
+				"type": "string"
+			},
+			{
+				"key": "value",
+				"value": "<API Key>",
+				"type": "string"
+			},
+			{
+				"key": "in",
+				"value": "header",
+				"type": "string"
+			}
+		]
+	},
+	"variable": [
+		{
+			"id": "cb71d35c-f664-4351-a15c-830080b225cb",
+			"key": "baseUrl",
+			"value": "https://ninjabay-rodolfo-trugillo.herokuapp.com",
+			"type": "string"
+		}
+	],
+	"protocolProfileBehavior": {}
+}

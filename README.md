@@ -45,11 +45,18 @@
 ### Importando o projeto
 
   - Com a aplicação do Postman aberta clique em: **File > Import**
-  - Na aba **File**, clique no botão **Upload Files** e navegue até a pasta do projeto de automação **teste-faker > postman** e selecione o arquivo com a coleção de requisições (``) e clique no botão **Import**;
+  - Na aba **File**, clique no botão **Upload Files** e navegue até a pasta do projeto de automação **ecommerce-api > postman** e selecione o arquivo com a coleção de requisições (`ecommerce-api.postman_collection.json`) e clique no botão **Import**;
   - Repita o processo clicando em: **File > Import**
-  - Na aba **File**, clique no botão **Upload Files** e navegue até a pasta do projeto de automação **teste-faker > postman** e agora selecione o arquivo com as variáveis de ambiente (``) e clique no botão **Import**;
+  - Na aba **File**, clique no botão **Upload Files** e navegue até a pasta do projeto de automação **ecommerce-api > postman** e agora selecione o arquivo com as variáveis de ambiente (`ecommerce-api.postman_environment`) e clique no botão **Import**;
 
 ### Execução
 
+  - **OBS.** Apenas as requisições que foram testadas manualmente para auxílio na automação estão nas pastas: **products** e **key-words**, além da requisição **Authorize**
   - Com a aplicação do Postman aberta navegue até a aba **Collections > ECommerce API**
-  - Agora basta selecionar dentro das pastas: **** ou ****, a requisição que deseja testar e clicar no botão **Send**
+  - Agora basta selecionar dentro das pastas a requisição que deseja testar e clicar no botão **Send**
+
+  Pasta         | Requisições
+  ---------     | ------
+  products      | Create Product, Get Products e Remove Product
+  key-words     | Get key-words e Create Key Word
+  ECommerce API | Authorize
