@@ -2,6 +2,12 @@ Dado('que tenho token de administrador') do
   @token = $stdin.call(ApiEcommerce).auth({ email: ENV['USER_ADMIN'], senha: ENV['PASS_USER_ADMIN'] })['data']['token']
 end
 
+Dado('que é removido um produto') do
+  steps %(Quando cadastro um produto com a requisição POST para /products)
+  @result = $stdin.call(ApiEcommerce).products(@token, { name: @body[:name] })['data']['itens'][0]
+  @result = $stdin.call(ApiEcommerce).remove_products(@token, @result['id'])
+end
+
 Quando('cadastro um produto com a requisição POST para /products') do
   @body = FactoryBot.build(:create_product).to_hash
   $stdin.call(ApiEcommerce).create_keyword({ word: Faker::Lorem.word }, @token)
@@ -24,6 +30,16 @@ Quando('tento cadastrar um produto com a requisição POST para /products com ke
   keywords = $stdin.call(ApiEcommerce).keywords(@token)
   @body[:keyWords][0] = keywords['data'].last['id'].reverse
   @result = $stdin.call(ApiEcommerce).create_product_without_token(@body)
+end
+
+Quando('cadastro um produto com a requisição POST para /products com o mesmo nome do excluído') do
+  old_name = @body[:name]
+  @body = FactoryBot.build(:create_product).to_hash
+  @body[:name] = old_name
+  $stdin.call(ApiEcommerce).create_keyword({ word: Faker::Lorem.word }, @token)
+  keywords = $stdin.call(ApiEcommerce).keywords(@token)
+  @body[:keyWords][0] = keywords['data'].last['id']
+  @result = $stdin.call(ApiEcommerce).create_product(@body, @token)
 end
 
 Então('valido resposta da API para o cadastro de produto') do

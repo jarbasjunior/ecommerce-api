@@ -30,4 +30,9 @@ class ApiEcommerce
     header = JSON.parse(ENV['HEADER']).merge!({ ENV['HEADER_TOKEN'] => "#{ENV['HEADER_TOKEN_VALUE']}#{token}" })
     self.class.get('/products', query: filters, headers: header)
   end
+
+  def remove_products(token, product_id)
+    header = JSON.parse(ENV['HEADER']).merge!({ ENV['HEADER_TOKEN'] => "#{ENV['HEADER_TOKEN_VALUE']}#{token}" })
+    self.class.delete("/products/#{product_id}", headers: header)
+  end
 end
