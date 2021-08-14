@@ -56,6 +56,15 @@ at_exit do
     config.report_types = [:html]
     config.report_title = 'ECommerce API'
     config.color = 'navy blue'
+    config.additional_info = {
+      Environment: ENV['ENV'],
+      'Current date': Time.now.strftime('%d/%m/%Y %H:%M'),
+      'Path coverage': "#{Coverage.new.path} %",
+      'Operator coverage': "#{Coverage.new.operator} %",
+      'Parameter coverage': "#{Coverage.new.parameter} %",
+      'Status code coverage': "#{Coverage.new.status_code} %",
+      'Parameter value coverage': "#{Coverage.new.parameter_value} %"
+    }
   end
   ReportBuilder.build_report
 end

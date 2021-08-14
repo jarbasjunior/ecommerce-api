@@ -20,6 +20,7 @@
   Metrics/MethodLength:
     Exclude:
       - 'features/support/models/*.rb'
+      - 'features/support/libs/*.rb'
     Max: 20
 
   Metrics/AbcSize:
