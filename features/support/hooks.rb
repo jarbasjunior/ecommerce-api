@@ -16,7 +16,7 @@ def exception_message(scenario)
   puts "\n-------"
   puts "\nurl....: #{@result.request.http_method.to_s.gsub('Net::HTTP::', '').upcase} -> #{@result.request.last_uri}"
   puts "\nparams.: #{@result.request.options[:params].to_json}"
-  puts "\nheader.: #{@result.request.options[:headers].to_json}"
+  puts "\nheader.: #{JSON.pretty_generate(@result.request.options[:headers])}"
   puts "\nbody...: \n#{@result.request.options[:body].nil? ? 'null' : JSON.pretty_generate(JSON.parse(@result.request.options[:body]))}"
   puts "\n--------"
   puts "\nRESPONSE"
